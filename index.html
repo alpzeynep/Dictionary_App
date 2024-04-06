@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!--Font Awesome-->
+    <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <!--Google Fonts-->
     <link
           href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -10,9 +14,10 @@
     />
     <!--Stylesheet -->
     <link rel="stylesheet" href="style.css"
-    <title> Dictionary </title>
+    <title>Dictionary </title>
 </head>
 <body>
+    <audio id="sound"></audio>
     <div class="container">
         <div class="search-box">
             <input
@@ -21,6 +26,24 @@
             id="inp-word"
             />
             <button id="serarch-btn">Search</button>
+        </div>
+        <div class="result">
+             <div class="word">
+                <h3>Sample</h3>
+                <button>
+                    <i class="fas fa-volume-up"></i>
+                </button>
+             </div>
+             <div class="details">
+                <p>pos</p>
+                <p>/sample/</p>
+             </div>
+             <p class="word-meaning">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, minima!
+             </p>
+             <p class="word-example">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus?
+            </p>
         </div>
     </div>
 
