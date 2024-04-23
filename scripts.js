@@ -27,9 +27,11 @@ btn.addEventListener("click", () => {
                 ${data[0].meanings[0].definitions[0].example || ""}
             </p>`
             sound.setAttribute("src", `https:${data[0].phonetics[0].audio}`);
+        })
+        .catch(() => {
+            result.innerHTML = `<h3 class ="error">Couldn't Find the Word</h3>`;
         });
-
-}); 
+});
 function playSound() {
     sound.play();
 }
